@@ -3,5 +3,8 @@
     height: 600px;
     border: 1px solid #ddd;
     color: blue; 
-    background: gray;
+    background: url(../assets/images/logo.jpg);
+}
+button{
+    background: url(../assets/images/button.png);
 }

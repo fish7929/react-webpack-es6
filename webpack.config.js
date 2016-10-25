@@ -40,7 +40,7 @@ var common = {
             },
             {
                 test  : /\.(png|jpg|jpeg|ico|gif|woff|woff2|ttf|eot|svg)$/,
-                loader: 'url-loader?limit=8192'
+                loader: 'url-loader?limit=8192&name=[path][name].[ext]'
             }
         ],
     },

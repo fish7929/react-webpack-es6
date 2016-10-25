@@ -7,6 +7,10 @@
 * index.html ：显示页面
 * template.html ：模版页面，和index.html一致只是去掉加载js文件，用于编译时候的生成编译html
 >
+### assets : 项目的资源文件
+* images ：图片文件
+>
+
 ### src : 是前端源代码根目录
 * components ：react 组件源码
 * index.jsx ：主入口
