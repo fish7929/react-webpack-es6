@@ -1,6 +1,7 @@
 import React from 'react';
-import CreateTodo from './create-todo';
-import TodosList from './todos-list';
+import CreateTodo from './todo/create-todo';
+import TodosList from './todo/todos-list';
+import MyButtonController from './myButton/myButtonController';
 const todos = [
     {
         task: 'make React tutorial',
@@ -29,6 +30,7 @@ export default class App extends React.Component {
                     toggleTask={this.toggleTask.bind(this)}
                     saveTask={this.saveTask.bind(this)}
                     deleteTask={this.deleteTask.bind(this)} />
+                <div><MyButtonController/></div>
             </div>
         );
     }

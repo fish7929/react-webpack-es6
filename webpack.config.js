@@ -86,7 +86,7 @@ var release = {
     },
     plugins: [
         new ExtractTextPlugin( "./css/style.css" ),     //导出CSS
-        new webpack.optimize.UglifyJsPlugin({
+        new webpack.optimize.UglifyJsPlugin({       //做JS压缩
             compress: {
                 warnings: false
             }
