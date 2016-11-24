@@ -52,4 +52,3 @@ export default class Counter extends React.Component {
         this.setState({todos: TodoStore.getData()});
     }
 }
-
