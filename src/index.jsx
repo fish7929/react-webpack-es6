@@ -1,6 +1,12 @@
 import './index.css';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM, {render} from 'react-dom';
 import App from './components/app';
 
-ReactDOM.render(<App/>, document.getElementById("app"));
+// import { Provider } from 'react-redux';
+
+// import counterStore from './stores/counterStore';
+
+// const store = counterStore();
+
+render(<App /> , document.getElementById("app"));
