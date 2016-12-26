@@ -12,9 +12,10 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 //production生产环境  development开发环境
 
 var env = 'development';
-
+var port = '8080';  //默认端口号
 if(argv.env === 'develop'){
 	env = 'development';
+    port = argv.port;
 }else if(argv.env === 'release'){
 	env = 'production';
 }
@@ -66,7 +67,7 @@ var dev = {
         ]
     },
     entry: [
-        'webpack-dev-server/client?http://localhost:8080',
+        'webpack-dev-server/client?http://localhost:'+port,
         'webpack/hot/only-dev-server'
     ],
     plugins: [

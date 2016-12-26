@@ -8,7 +8,6 @@ import Counter from './counter/counter';
 import { Provider } from 'react-redux';
 
 import counterStore from '../stores/counterStore';
-
 const store = counterStore();
 
 export default class App extends React.Component {
